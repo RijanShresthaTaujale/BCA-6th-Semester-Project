@@ -1,0 +1,257 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #5A2D0C; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cake-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cake-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(20% - 20px);
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cake-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cake-item h3 {
+    font-size: 1.3rem;
+    color: #6a4e23;
+    margin-bottom: 8px;
+}
+
+.cake-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.cake-item strong {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #5A2D0C;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #3E1F07;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+form {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+form h2 {
+    color: #6a4e23;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form select,
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #5A2D0C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3E1F07;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #5A2D0C;
+    color: white;
+}
+
+td a {
+    color: #5A2D0C;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+td select, td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5A2D0C;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+td button:hover, td select:hover {
+    background-color: #3E1F07;
+    transform: translateY(-2px);
+}
+
+td button:active, td select:active {
+    transform: translateY(1px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+    .cake-item {
+        width: calc(25% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .cake-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cake-item {
+        width: calc(50% - 20px); 
+    }
+
+    header {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cake-item {
+        width: 100%; 
+    }
+}
